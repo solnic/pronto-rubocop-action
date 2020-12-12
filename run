@@ -6,4 +6,6 @@ ls -l
 
 export BUNDLE_GEMFILE=/pronto/Gemfile
 
+bundle binstubs --all --force
+
 pronto run -f github_pr_review -c origin/$GITHUB_BASE_REF -r rubocop
