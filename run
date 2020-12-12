@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+bundle exec pronto run -f github_pr_review -c origin/master
