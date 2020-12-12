@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-echo $GITHUB_SHA
+cd /home/runner/work
+bundle install
+bundle exec pronto run -f github_pr_review -c origin/master
