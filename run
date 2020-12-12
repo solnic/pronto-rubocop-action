@@ -2,4 +2,4 @@
 
 cd $GITHUB_WORKSPACE
 
-bundle exec pronto run -f github_pr_review -c origin/$GITHUB_BASE_REF -r rubocop
+pronto run -f github_pr_review -c origin/$GITHUB_BASE_REF -r rubocop
