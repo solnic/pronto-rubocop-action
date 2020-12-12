@@ -1,10 +1,7 @@
-FROM solnic/ruby:latest
+FROM solnic/pronto-rubocop:latest
 
 WORKDIR /runner
 
-COPY Gemfile ./
 COPY run ./
-
-RUN ls -l
 
 ENTRYPOINT [ "/runner/run" ]
