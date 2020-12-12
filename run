@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd /home/runner/work
+cd $GITHUB_WORKSPACE
 
 export BUNDLE_GEMFILE=/runner/Gemfile
 
