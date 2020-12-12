@@ -1,6 +1,6 @@
 FROM solnic/ruby:latest
 
-WORKDIR /github/workspace
+COPY run run
 
 RUN ls -l
 
