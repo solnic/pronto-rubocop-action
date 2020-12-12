@@ -2,4 +2,8 @@
 
 cd $GITHUB_WORKSPACE
 
-BUNDLE_GEMFILE=/pronto/Gemfile pronto run -f github_pr_review -c origin/$GITHUB_BASE_REF -r rubocop
+ls -l
+
+export BUNDLE_GEMFILE=/pronto/Gemfile
+
+pronto run -f github_pr_review -c origin/$GITHUB_BASE_REF -r rubocop
