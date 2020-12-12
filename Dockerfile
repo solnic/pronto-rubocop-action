@@ -1,7 +1,9 @@
 FROM solnic/ruby:latest
 
-COPY run run
+WORKDIR /runner
+
+COPY run ./
 
 RUN ls -l
 
-ENTRYPOINT [ "./run" ]
+ENTRYPOINT [ "/runner/run" ]
