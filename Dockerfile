@@ -2,6 +2,6 @@ FROM solnic/ruby:latest
 
 USER root
 
-RUN bundle install
+RUN ls -l
 
 ENTRYPOINT [ "run" ]
