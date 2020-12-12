@@ -2,7 +2,4 @@
 
 cd $GITHUB_WORKSPACE
 
-export BUNDLE_GEMFILE=/runner/Gemfile
-
-bundle install
-bundle exec pronto run -f github_pr_review -c origin/master
+pronto run -f github_pr_review -c origin/master
